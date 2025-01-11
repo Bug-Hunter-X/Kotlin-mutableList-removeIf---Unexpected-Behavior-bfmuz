@@ -1,0 +1,3 @@
+This example demonstrates an uncommon bug in Kotlin related to using `removeIf()` on a mutable list.  The `removeIf()` function modifies the list in place, and if you're not careful about how you modify it, you can end up removing elements unintentionally and skipping over others. This can happen because the underlying indices change when elements are removed.
+
+The solution provides a safer way to remove elements from the list which avoids unexpected behaviors.
